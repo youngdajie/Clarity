@@ -9,7 +9,7 @@ const basicConfig = {
 		name: '小杰',
 		avatar: 'https://cdn.yangjie.site/sites/box/img/about/avatar.jpg',
 		email: 'ok@yangjie.site',
-		homepage: 'https://pro.yangjie.site/',
+		homepage: 'https://www.yangjie.site/',
 	},
 	copyright: {
 		abbr: 'CC BY-NC-SA 4.0',
@@ -21,7 +21,7 @@ const basicConfig = {
 	timeEstablished: '2023-10-13',
 	timeZone: 'Asia/Shanghai',
 	url: 'https://pro.yangjie.site/',
-	defaultCategory: '未分类',
+	defaultCategory: '默认分类',
 }
 
 // 存储 nuxt.config 和 app.config 共用的配置
