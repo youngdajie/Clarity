@@ -21,7 +21,7 @@ const basicConfig = {
 	timeEstablished: '2023-10-13',
 	timeZone: 'Asia/Shanghai',
 	url: 'https://pro.yangjie.site/',
-	defaultCategory: '默认分类',
+	defaultCategory: '未分类',
 }
 
 // 存储 nuxt.config 和 app.config 共用的配置
@@ -43,6 +43,8 @@ const blogConfig = {
 			杂谈: { icon: 'tabler:message', color: '#33bbaa' },
 			/** 记录叙事：个人经历/校园家庭/日常片段 */
 			生活: { icon: 'tabler:leaf', color: '#ff7777' },
+			/** 其他：不属于以上分类的文章 */
+			其他: { icon: 'streamline-block:other-ui-sparks', color: '#83e963' },
 		},
 		/** 文章版式，首个为默认版式 */
 		types: {
@@ -56,7 +58,7 @@ const blogConfig = {
 			// title: '标题',
 		},
 		/** 使用 pnpm new 新建文章时自动生成自定义链接（permalink/abbrlink） */
-		useRandomPremalink: false,
+		useRandomPremalink: true,
 		/** 隐藏基于文件路由（不是自定义链接）的 URL /post 路径前缀 */
 		hidePostPrefix: true,
 		/** 禁止搜索引擎收录的路径 */
@@ -100,7 +102,7 @@ export const myFeed: FeedEntry = {
 	feed: new URL('/atom.xml', blogConfig.url).toString(),
 	icon: blogConfig.favicon,
 	avatar: blogConfig.author.avatar,
-	archs: ['Nuxt', 'Vercel'],
+	archs: ['Nuxt', 'EdgeOne'],
 	date: blogConfig.timeEstablished,
 	comment: '这是我自己',
 }

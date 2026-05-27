@@ -85,7 +85,7 @@ export default defineAppConfig({
 				items: [
 					{ icon: 'simple-icons:nuxt', text: `主题: ${pascalCase(name)} ${version}`, url: 'https://github.com/youngdajie/Clarity' },
 					{ icon: 'tabler:color-swatch', text: '主题和组件文档', url: 'https://blog.zhilu.site/theme' },
-					// { icon: 'tabler:certificate', text: '备案', url: 'https://beian.miit.gov.cn/' },
+					{ icon: 'tabler:certificate', text: '蜀ICP备2021020461号-2', url: 'https://beian.miit.gov.cn/' },
 				],
 			},
 		] satisfies Nav,

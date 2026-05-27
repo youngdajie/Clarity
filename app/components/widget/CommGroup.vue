@@ -3,7 +3,7 @@
 	card
 	dim
 	title="加我好友"
-	bg-img="https://cdn.yangjie.site/sites/clarity/assets/img/qq.avif"
+	bg-img="https://cdn.yangjie.site/sites/clarity/assets/img/qq.svg"
 	bg-right
 >
 	<div class="title text-creative">
