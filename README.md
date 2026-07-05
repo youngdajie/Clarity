@@ -7,17 +7,7 @@
 [![部署平台](https://img.shields.io/badge/部署平台-Vercel-000000?logo=Vercel)](https://vercel.com/)
 [![访问统计](https://img.shields.io/badge/访问统计-Umami-000000?logo=Umami)](https://github.com/umami-software/umami)
 [![代码风格](https://img.shields.io/badge/代码风格-ESLint-4B32C3?logo=ESLint)](https://eslint.org/)
-[![代码风格](https://img.shields.io/badge/代码风格-Stylelint-263238?logo=Stylelint)](https://stylelint.io/)
-
-## 使用本主题的博客
-
-> [!WARNING]
->
-> 修改本项目需要具备**前端开发**和**项目部署**能力。由于这是个人博客，代码经过深度定制，且可能会进行较大幅度的更新，建议您 Fork 后安心使用自己分支的版本；若需引入上游（本仓库）的新功能，建议重新 Fork 最新代码，以避免同步冲突。
->
-> 如果需要协助或有问题咨询，欢迎加入 QQ 群 169994096 讨论/闲聊，我会在空闲时尽力解答。
-
-> 主题吸收了 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 的设计风格，命名为 **Clarity**，寓意清楚的阅读体验和清晰的观点表达。限于下游越来越多，未来将会有选择地收录。                                           |
+[![代码风格](https://img.shields.io/badge/代码风格-Stylelint-263238?logo=Stylelint)](https://stylelint.io/)                                         |
 
 ## 特性
 
@@ -72,7 +62,7 @@
 │   │   └── stats.get.ts # 博客静态统计
 │   └── routes # 根路由
 │       ├── atom.xml.get.ts # Atom 订阅源
-│       └── zhilu.opml.get.ts # OPML 订阅源聚合
+│       └── subscriptions.opml.get.ts # OPML 订阅源聚合
 ├── blog.config.ts # 博客静态公共配置★
 ├── content.config.ts # Nuxt Content 配置
 ├── edgeone.json # EdgeOne 配置
@@ -125,7 +115,7 @@ pnpm preview
 
 ### 部署指南
 
-支持 Vercel、Netlify、Cloudflare Pages、EdgeOne 等平台部署。建议采用静态（SSG）部署方式：
+支持 Vercel、Netlify、Cloudflare Pages、EdgeOne Makers 等平台部署。建议采用静态（SSG）部署方式：
 
 - 构建命令: `pnpm generate`
 - 输出目录: `dist`
@@ -145,7 +135,3 @@ pnpm preview
 pnpm check:feed # 检测某友链 / 任意 URL 的托管商及可访问性
 pnpm check:feed/all # 检测所有友链可访问性并生成报告
 ```
-
-## 贡献
-
-欢迎参与项目：如果有具体问题或功能建议，可以发起 Issue；如果愿意在已确定的方向上增加功能或修复问题，可以提交 Pull Request。

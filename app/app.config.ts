@@ -83,9 +83,9 @@ export default defineAppConfig({
 			{
 				title: '信息',
 				items: [
-					{ icon: 'simple-icons:nuxt', text: `主题: ${pascalCase(name)} ${version}`, url: 'https://github.com/youngdajie/Clarity' },
-					{ icon: 'tabler:color-swatch', text: '主题和组件文档', url: 'https://blog.zhilu.site/theme' },
-					{ icon: 'tabler:certificate', text: '蜀ICP备2021020461号-2', url: 'https://beian.miit.gov.cn/' },
+					{ icon: 'simple-icons:nuxt', text: `主题: ${pascalCase(name)} ${version}`, url: 'https://github.com/L33Z22L11/blog-v3' },
+					{ icon: 'tabler:color-swatch', text: '主题和组件文档', url: '/theme' },
+					{ icon: 'tabler:certificate', text: '陕ICP备2025082251号', url: 'https://beian.miit.gov.cn/' },
 				],
 			},
 		] satisfies Nav,
@@ -93,7 +93,7 @@ export default defineAppConfig({
 
 	/** 左侧栏顶部 Logo */
 	header: {
-		logo: blogConfig.author.avatar,
+		logo: 'https://weavatar.com/avatar/47c0f2e82b76d9b10eb3023df9e02e4e3fdbeaf5b74b842063f207971e7fbe7b?s=160',
 		/** 展示标题文本，否则展示纯 Logo */
 		showTitle: true,
 		subtitle: blogConfig.subtitle,
@@ -114,9 +114,8 @@ export default defineAppConfig({
 			title: '',
 			items: [
 				{ icon: 'tabler:files', text: '文章', url: '/' },
-				{ icon: 'tabler:archive', text: '归档', url: '/archive' },
-				{ icon: 'i-ph:user-bold', text: '关于', url: '/about' },
 				{ icon: 'tabler:link', text: '友链', url: '/link' },
+				{ icon: 'tabler:archive', text: '归档', url: '/archive' },
 			],
 		},
 	] satisfies Nav,

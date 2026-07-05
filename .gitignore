@@ -4,9 +4,7 @@
 .nuxt
 .nitro
 .cache
-
 dist
-pnpm-lock.yaml
 
 # Node dependencies
 node_modules
@@ -28,3 +26,5 @@ logs
 # Custom
 .vercel
 content/posts/test.md
+
+pnpm-lock.yaml

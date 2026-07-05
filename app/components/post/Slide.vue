@@ -34,7 +34,7 @@ useEventListener(carouselEl, 'wheel', (e) => {
 		<span class="title text-creative">精选文章</span>
 		<div class="at-slide-hover">
 			<Icon name="tabler:mouse" />
-			按住 左键 不放，左右滚动即可
+			按住 Shift 横向滚动
 		</div>
 	</div>
 
