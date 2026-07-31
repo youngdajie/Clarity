@@ -2,16 +2,17 @@
 <BlogWidget
 	card
 	dim
-	title="博客/技术社区"
-	bg-img="https://p.qlogo.cn/gh/169994096/169994096/100/"
-	bg-right
+	title="插件卡片"
+	bg-img="https://cdn.yangjie.site/sites/clarity/assets/img/qq.svg"
+	bg-aside
 >
 	<div class="title text-creative">
-		纸网接入点
+		有事 QQ
 	</div>
 
 	<Tip copy icon :tip-options="{ placement: 'left' }">
-		<Icon name="ri:qq-fill" />169994096
+		<Icon name="ri:qq-fill" />
+		<span>434871910</span>
 	</Tip>
 </BlogWidget>
 </template>

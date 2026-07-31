@@ -2,7 +2,7 @@
 title: 组件样式示例
 date: 2024-09-21 23:18:18
 updated: 2026-04-06 17:25:03
-# aside: [toc, meta-aside-foo, meta-aside-bar]
+aside: [toc, meta-aside-foo, meta-aside-bar]
 # type: story
 ---
 
@@ -107,6 +107,8 @@ class: gradient-card active
 `行内代码` 和 [在超链接中的 `行内代码`](#代码-prosecode)。
 
 还可以通过在反引号后加 `{lang="js"}` 等语言实现高亮，例如 `const a = 1`{lang="js"} 。
+
+也可以加上 `copy` 展示复制按钮，例如 `pnpm dev`{lang="sh" copy} 。
 
 ### 代码块 `ProsePre`
 
@@ -1042,11 +1044,11 @@ active: 2 # 默认显示第二个选项卡，可选
 
 ::tab{:tabs='["组件","语法"]'}
 #tab1
-:tip[我是一条小提示]{tip="提示的内容是提示"}， :tip[我没有图标]{icon tip="或许也可以没有内容"}， :tip[+v 点击就能复制，太方便了！]{copy}
+:tip[我是一条小提示]{tip="提示的内容是提示"}， :tip[我没有图标]{icon tip="或许也可以没有内容"}
 
 #tab2
 ```mdc wrap
-:tip[我是一条小提示]{tip="提示的内容是提示"}， :tip[我没有图标]{icon tip="或许也可以没有内容"}， :tip[+v 点击就能复制，太方便了！]{copy}
+:tip[我是一条小提示]{tip="提示的内容是提示"}， :tip[我没有图标]{icon tip="或许也可以没有内容"}
 ```
 ::
 

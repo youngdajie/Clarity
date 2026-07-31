@@ -80,15 +80,13 @@ const blogConfig = {
 		// 自己网站的 Cloudflare Insights 统计服务
 		// { 'src': 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "97a4fe32ed8240ac8284e9bffaf03962"}', 'defer': true },
 		// Twikoo 评论系统
-		// { src: 'https://lib.baomitu.com/twikoo/1.6.44/twikoo.min.js', defer: true },
+		// { src: 'https://cdnjs.snrat.com/ajax/libs/twikoo/1.7.13/twikoo.min.js', defer: true },
 	],
 
 	/** 自己部署的 Twikoo 服务 */
 	twikoo: {
 		// envId: 'https://twikoo.example.site/',
 		// preload: 'https://twikoo.example.site/',
-		envId: '',
-		preload: '',
 	},
 }
 
@@ -102,7 +100,7 @@ export const myFeed: FeedEntry = {
 	feed: new URL('/atom.xml', blogConfig.url).toString(),
 	icon: blogConfig.favicon,
 	avatar: blogConfig.author.avatar,
-	archs: ['Nuxt', 'EdgeOne'],
+	archs: ['Nuxt', '国内 CDN'],
 	date: blogConfig.timeEstablished,
 	comment: '这是我自己',
 }

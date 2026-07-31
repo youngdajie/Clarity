@@ -26,5 +26,3 @@ logs
 # Custom
 .vercel
 content/posts/test.md
-
-pnpm-lock.yaml

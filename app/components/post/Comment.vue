@@ -105,7 +105,7 @@ onMounted(() => {
 	</Tooltip>
 
 	<div id="twikoo">
-		<p>评论加载中...</p>
+		<p>评论加载中 ... 或者根本没配置评论组件</p>
 	</div>
 </section>
 </template>
